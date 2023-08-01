@@ -48,7 +48,34 @@
                   "maximumError": "4kb"
                 }
               ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
               "outputHashing": "all"
+            },
+            "test":{
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "5000kb",
+                  "maximumError": "10mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "5000kb",
+                  "maximumError": "2500kb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.test.ts"
+                }
+              ],
+              "outputHashing": "all"              
             },
             "development": {
               "buildOptimizer": false,
@@ -100,5 +127,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "ff68cfff-8d09-40c4-b1dd-56fde3585160"
   }
 }

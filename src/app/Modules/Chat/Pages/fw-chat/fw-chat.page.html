@@ -1,0 +1,145 @@
+<!-- Contenedor gris al lado de la barra lateral -->
+<section class="grid grid-cols-4 grid-rows-1 gap-0 h-screen bg-gray-800">
+
+    <aside class="overflow-hidden hover:overflow-auto col-span-4 sm:col-span-2 lg:col-span-1  rounded-none transition-all duration-200 ease-in-out border-e-2 border-gray-600">
+        <app-fw-chat-contacts></app-fw-chat-contacts>
+    </aside>
+    <div
+        class="text-white col-span-4 sm:col-span-2 lg:col-span-3  transition-all duration-200 ease-in-out pt-6 grid-rows-1 p-3 ">
+        <div class="h-full p-3 gap-3 flex flex-col justify-between">
+            <div class="h-16 flex justify-between border-b-[1px] border-gray-600">
+                <div>
+                    <h1 class="m-0 font-bold text-xl">
+                        Office Chat
+                    </h1>
+                    <h3 class="m-0 font-normal text-sm text-gray-300">
+                        45 menbers, 24 onlinbe
+                    </h3>
+                </div>
+                <div class="flex gap-12 ">
+                    <figure class="m-0 flex justify-center items-center">
+                        <img src="assets/SVG/search.svg" class="w-5 h-5 invert-[.7]" alt="">
+                    </figure>
+                    <figure class="m-0 flex justify-center items-center">
+                        <img src="assets/SVG/call.svg" class="w-5 h-5 invert-[.7]" alt="">
+                    </figure>
+                    <figure class="m-0 flex justify-center items-center">
+                        <img src="assets/SVG/more.svg" class="w-5 h-5 invert-[.7]" alt="">
+                    </figure>
+                </div>
+
+
+            </div>
+            <div class=" h-[calc(100%_-_5rem)] flex">
+                <div class="flex flex-col-reverse w-full">
+                    <div class="w-full pt-2 flex gap-4">
+                        <div class="flex-none">
+                            <figure class="m-0 h-full flex justify-center items-center">
+                                <img src="assets/SVG/clip.svg" class="w-5 h-5 invert-[.7]" alt="">
+                            </figure>
+                        </div>
+                        <div class="flex-1">
+                            <input 
+                                type="text" id="search" name="search" placeholder="Buscar..."
+                                class="w-full hover:border-none focus:border-none appearance-none rounded-full border-0 bg-gray-500 py-2 px-4" />
+                        </div>
+                        <div class="flex-none">
+                            <figure class="m-0 h-full flex justify-center items-center">
+                                <img src="assets/SVG/micro.svg" class="w-5 h-5 invert-[.7]" alt="">
+                            </figure>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- MESSAGES -->
+                    <div class="overflow-auto px-24 ">
+                        <div class="flex w-full justify-start OtherMessage gap-2 pb-7">
+                            <figure class="m-0 h-full flex justify-center items-center">
+                                <img src="assets/Chat/me.png" width="40" alt="">
+                            </figure>
+                            <div class="max-w-[50%] bg-gray-300 text-blue-700 rounded-2xl p-3">
+                                <div class="pb-2">
+                                    <span class="text-blue-900"> 
+                                        Josue Chirinos
+                                    </span>
+                                    <p class="text-blue-700">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore aliquid mollitia corrupti inventore tempora facere id voluptatum earum quo autem sit quaerat aliquam impedit omnis, temporibus molestiae? Architecto, beatae!
+                                    </p>
+                                </div>
+                                <div class="w-full flex justify-between items-center">
+                                    <span class="p-1 rounded-xl bg-blue-600">
+                                        🤣
+                                    </span>
+                                    <span class="text-sm font-medium ">
+                                        12:00
+                                    </span>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+
+
+                        <div class="flex w-full justify-end MeMessage gap-2 pb-7">
+                            <div class="max-w-[50%] bg-blue-300 text-gray-700 rounded-2xl p-3">
+                                <div class="pb-2">
+                                    <span class="text-gray-900"> 
+                                        Josue Chirinos
+                                    </span>
+                                    <p class="text-gray-700">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore aliquid mollitia corrupti inventore tempora facere id voluptatum earum quo autem sit quaerat aliquam impedit omnis, temporibus molestiae? Architecto, beatae!
+                                    </p>
+                                </div>
+                                <div class="w-full flex justify-between items-center">
+                                    <span class="p-1 rounded-xl bg-gray-600">
+                                        🤣
+                                    </span>
+                                    <span class="text-sm font-medium ">
+                                        12:00
+                                    </span>
+                                    
+                                </div>
+                                
+                            </div>
+                            <figure class="m-0 h-full flex justify-center items-center">
+                                <img src="assets/Chat/me.png" width="40" alt="">
+                            </figure>
+                        </div>
+                        
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- <div class="grid grid-rows-6 gap-4 h-full p-2">
+            <div class="row-span-1 bg-red-100">01</div>
+            <div class="row-span-5 col-span-2 bg-red-100">03</div>
+          </div> -->
+
+        <!-- <div class="flex items-center w-full mt-2 p-4">
+            <div class="relative w-full">
+                <span class="absolute inset-y-0 left-0 pl-3 flex items-center">
+                    <i class="fas fa-search text-gray-200"></i>
+                </span>
+                <input type="text"
+                    class="pl-10 pr-4 py-2 rounded-full border border-gray-300 w-full text-sm placeholder-gray-400"
+                    placeholder="Buscar..." />
+            </div>
+        </div>
+    
+        <div class="grid grid-cols-1 mt-2 p-4">
+            <div class="bg-white p-4 rounded-md">
+                <h2 class="text-gray-600 text-lg font-semibold pb-4">Usuarios</h2>
+                <div class="chart-container" style="position: relative; height:200px; width:200px">
+                    <canvas id="usersChart"></canvas>
+                </div>
+            </div>
+    
+        </div> -->
+    </div>
+</section>

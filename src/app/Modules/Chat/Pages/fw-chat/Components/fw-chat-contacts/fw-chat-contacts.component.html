@@ -1,0 +1,42 @@
+<div id="sidebar" class="pt-8">
+    <!-- Items -->
+    <div class="p-1">
+        <form class="flex justify-center py-3 mx-6">
+            <input type="text" id="search" name="search" placeholder="Buscar..."
+                class="w-3/4 appearance-none rounded-full border-0 bg-gray-500 p-2 px-4" />
+
+        </form>
+
+    </div>
+    <div class="p-1 space-y-1 text-white">
+
+        <ng-container *ngFor="let user of Users">
+
+            <div class="flex justify-center py-0 mx-1">
+                <div class="w-10/12">
+                    <div class="w-full  rounded-2xl px-3 py-4 flex justify-between hover:bg-gray-700 cursor-default">
+                        <div class="flex gap-3">
+                            <figure class="m-0 flex items-center justify-center rounded-2xl p-2 bg-blue-200">
+                                <img src="assets/Chat/office_avatar.png" width="40" alt="">
+                            </figure>
+                            <div class="w-[13rem] truncate">
+                                <h3>{{user.name}}</h3>
+                                <span class="text-lg text-gray-400">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quia placeat nihil alias aspernatur, adipisci aperiam laboriosam sunt deserunt itaque magnam omnis voluptatum ipsa, eligendi exercitationem? Reprehenderit, voluptatibus asperiores? Laudantium.
+
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="m-0">4 m</h4>
+                            <div class="bg-blue-400 rounded-full flex justify-center items-center"> 5 </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </ng-container>
+
+    </div>
+</div>

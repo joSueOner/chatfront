@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+
+:root {
+    --primary: rebeccapurple;
+    --secondary: cornflowerblue;
+  }
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: gray transparent;
+}
+
+
+@tailwind components;
+@tailwind utilities;
