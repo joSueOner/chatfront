@@ -1,1 +1,24 @@
-<p>fw-chat-form works!</p>
+<section class="w-full pt-2 flex gap-4">
+    <div class="flex-none">
+        <figure class="m-0 h-full flex justify-center items-center">
+            <img src="assets/SVG/clip.svg" class="w-5 h-5 invert-[.7]" alt="">
+        </figure>
+    </div>
+    <form class="flex-1" [formGroup]="form">
+        <input 
+            type="text" 
+            id="message"
+            name="message" placeholder="Mensaje..."
+            class="w-full hover:border-none focus:border-none appearance-none rounded-full border-0 bg-gray-500 py-2 px-4" 
+            formControlName="message"
+            (keypress)="KeyPress($event)"
+        />
+    </form>
+    <div class="flex-none">
+        <figure class="m-0 h-full flex justify-center items-center">
+            <img src="assets/SVG/micro.svg" class="w-5 h-5 invert-[.7]" alt="">
+        </figure>
+
+    </div>
+
+</section>

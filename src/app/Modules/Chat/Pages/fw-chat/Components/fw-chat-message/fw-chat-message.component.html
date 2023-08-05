@@ -1,0 +1,56 @@
+<div class="flex w-full OtherMessage gap-2 pb-7"
+[ngClass]="{
+    'justify-start' : Message.coduser !== Id,
+    'justify-end' : Message.coduser === Id,
+
+}"
+>
+    <figure class="m-0 h-full flex justify-center items-center" *ngIf="Message.coduser !== Id">
+        <img src="assets/Chat/me.png" width="40" alt="">
+    </figure>
+
+
+    <div class="max-w-[50%] min-w-[8rem] rounded-2xl p-3"
+        [ngClass]="{
+            'bg-gray-300 text-blue-700' : Message.coduser !== Id,
+            'bg-blue-300 text-gray-700' : Message.coduser === Id,
+        }"
+    >
+        <div class="p-0">
+            <!-- <span class="text-blue-900"
+                [ngClass]="{
+                    'text-blue-900' : Message.coduser !== Id,
+                    'text-gray-900' : Message.coduser === Id,
+                }"
+            > 
+                {{ Message.coduser }}
+            </span> -->
+            <p class=""
+        
+                [ngClass]="{
+                    'text-blue-700' : Message.coduser !== Id,
+                    'text-gray-700' : Message.coduser === Id,
+                }"
+            >
+                {{ Message.message }}
+            </p>
+        </div>
+        <div class="w-full flex justify-between items-center">
+            <span class="p-0 rounded-xl"
+            [ngClass]="{
+                'bg-blue-600' : Message.coduser !== Id,
+                'bg-gray-600' : Message.coduser === Id,
+            }"
+            >
+            </span>
+            <span class="text-sm font-medium ">
+                12:00
+            </span>
+            
+        </div>
+        
+    </div>
+    <figure class="m-0 h-full flex justify-center items-center" *ngIf="Message.coduser=== Id">
+        <img src="assets/Chat/me.png" width="40" alt="">
+    </figure>
+</div>
